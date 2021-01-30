@@ -8,7 +8,9 @@ compress and decompress files.
 This program takes three flags from users, each indicating a distinct function:
 
 -b : “build codebook”
+
 -c : “compress”
+
 -d : “decompress”
 
 The recursive flag will perform one of the first three operations on either a single file provided
@@ -55,6 +57,4 @@ pseudo-Huffman Tree using the buildDeComtree() method. It does this by taking th
 of the tree, and traveling left if the next bit in the byteString is zero, and travel right if the next
 bit is one, creating empty nodes along the path if needed. Then the node is inserted after the last
 byte is read. Finally, dFlag takes the head of the tree built, and the filename name and passes
-them to writeDeCom(). This method starts at the head and goes to the Nodes left if 0, and right if
-1. This process continues until a leaf node is hit, at which point the leaf’s byteString is written, and
-the next bit in the file starts the process again at the head, until the file ends.
+them to writeDeCom(). This method starts at the head and goes to the Nodes left if 0, and right if 1. This process continues until a leaf node is hit, at which point the leaf’s byteString is written, and the next bit in the file starts the process again at the head, until the file ends.
