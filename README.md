@@ -5,6 +5,11 @@
 The fileCompressor program creates, opens, reads, and writes files, using file descriptors and
 open(). The program also builds and traverses various trees and lists, utilizing Huffman coding to
 compress and decompress files.
+
+The program takes input from the command line in the following format 
+
+./fileCompressor -flag-  -path or file- |codebook|
+
 This program takes three flags from users, each indicating a distinct function:
 
 -b : “build codebook”
